@@ -1,0 +1,388 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#logo {
+    margin-left: 15rem;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    padding: 10px 0;
+    margin-right: 15em;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #0a2540;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #0a2540;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#main-area {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.main-contant {
+    width: 100%;
+    height: 76vh;
+    background-image: url(header/header-background-3.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-text {
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 14rem;
+}
+
+.color {
+    color: #ff4438;
+}
+
+.header-date {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.submit-paper {
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff4438;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    gap: 8px;
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 0% 100%);
+}
+
+.submit-paper:hover {
+    background-color: #e63939;
+    border: none;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.about {
+    width: 100%;
+    height: 40vh;
+    background-image: url(submission/about-us-background.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #11284C;
+    padding: 18px 0;
+    display: flex;
+}
+
+.about-contant {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin: 0 14rem;
+}
+
+.about-header {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    display: block;
+}
+
+.text-1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+    word-wrap: break-word;
+    line-height: 1.6;
+}
+
+.text-2 {
+    color: #fff;
+    font-size: 20px;
+    text-align: justify;
+    display: block;
+    line-height: 1.6;
+}
+
+.specified-research {
+    background-color: #11284C;
+    padding-bottom: 100px ;
+}
+
+.research-contant {
+    margin: 0 14rem;
+}
+
+.specified-research h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.track-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px
+}
+
+.track-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.track-item p {
+    margin-top: 2.5rem;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.conference-journey {
+    margin-top: 6rem;
+}
+
+.conference-img img {
+    width: 100%;
+}
+
+.submission {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submission-header {
+    text-align: center;
+}
+
+.submission p:first-child {
+    font-size: 32px;
+    font-weight: 800;
+    color: #11284C;
+    margin-bottom: 0.5rem;
+}
+
+.submission p {
+    font-size: 16px;
+    color: #9195a2;
+}
+
+.line {
+    width: 8%;
+    margin: 2rem 2.5rem;
+    height: 1px;
+    border-top: 1px solid;
+    border-top-color: #ff4438;
+    border-top-width: 4px;
+    position: absolute;
+}
+
+.download-template {
+    width: 75%;
+    height: 38vh;
+    background-image: url(submission/submission-background-1.png);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #11284C;
+    padding: 36px 40px;
+    clip-path: polygon(0 0, 96.5% 0, 100% 8%, 100% 100%, 0 99%, 0% 50%);
+}
+
+.template h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    text-align: start;
+}
+
+.template p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-submission {
+    margin: 1rem;
+}
+
+.btn {
+    border: 2px solid #f82249;
+    color: #f82249;
+    background-color: #11284C;
+    padding: 12px 32px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    display: inline-block;
+    position: relative;
+    clip-path: polygon(0 0, 88.8% 0%, 100% 50%, 100% 100%, 0 100%);
+    cursor: pointer;
+    animation-delay: 0.5s;
+    text-decoration: none;
+}
+
+.download-btn {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 20px solid #f82249;
+    border-left: 20px solid transparent;
+}
+
+.landscape-btn {
+    clip-path: polygon(0 0, 92% 0%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.portrait-btn {
+    clip-path: polygon(0 0, 92% 0%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.btn:hover {
+    background-color: #f82249;
+    color: #fff;
+}
+
+.submit-form {
+    width: 75%;
+    height: 20vh;
+    background-image: url(submission/second-submission-background.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #11284C;
+    min-height: 1;
+    padding: 36px 40px;
+    margin: 40px 20px;
+    clip-path: polygon(0 0, 97% 0, 100% 19%, 100% 100%, 0 99%, 0% 50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-form h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.submit-form span {
+    color: #e63939;
+    font-weight: normal;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form a {
+    clip-path: polygon(0 0, 86.8% 0%, 100% 50%, 100% 100%, 0 100%);
+}
