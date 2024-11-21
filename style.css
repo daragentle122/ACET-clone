@@ -9,7 +9,9 @@ body {
     font-family: Arial, sans-serif;
     font-size: 14px;
     color: #666;
+    background-color: #11284C;
     height: 100vh;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -249,7 +251,6 @@ body {
 .submission {
     text-align: center;
     width: 100%;
-    height: 76vh;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -273,13 +274,12 @@ body {
 }
 
 .line {
-    width: 8%;
+    width: 200px;
     margin: 2rem 2.5rem;
     height: 1px;
     border-top: 1px solid;
     border-top-color: #ff4438;
     border-top-width: 4px;
-    position: absolute;
 }
 
 .download-template {
@@ -292,6 +292,7 @@ body {
     background-color: #11284C;
     padding: 36px 40px;
     clip-path: polygon(0 0, 96.5% 0, 100% 8%, 100% 100%, 0 99%, 0% 50%);
+    
 }
 
 .template h2 {
@@ -387,11 +388,11 @@ body {
     clip-path: polygon(0 0, 86.8% 0%, 100% 50%, 100% 100%, 0 100%);
 }
 
-.agenda{
-    margin-top: -200px;
+.agenda {
+    margin-top: 20px; 
     text-align: center;
     width: 100%;
-    height: 76vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,43 +408,33 @@ body {
     color: #11284C;
 }
 
-.agenda a{
-    font-size: 20px;
+.agenda a {
     display: inline-block;
     color: red;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.agenda a:hover{
+.agenda a:hover {
     transform: scale(1.1);
 }
 
-#Date1{
-    margin-right: 51%;
-    margin-top: 20px;
+#Date1, #Date2 {
     font-size: 32px;
     font-weight: 800;
     color: #11284C;
+    margin-top: 20px; /* Reduce excessive top margin */
+    margin-right: auto;
+    margin-left: auto;
 }
-
-#Date2{
-    margin-right: 53%;
-    margin-top: 70px;
-    font-size: 32px;
-    font-weight: 800;
-    color: #11284C;
-}
-
 
 .namespace {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #102040;
-    color: #ffffff; 
+    color: #ffffff;
 }
-
 
 .header {
     text-align: center;
@@ -459,38 +450,37 @@ body {
 .header p {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #dcdcdc; 
+    color: #dcdcdc;
 }
 
 .header hr {
     width: 80px;
-    border: 2px solid #ff2f2f; 
+    border: 2px solid #ff2f2f;
     margin: 10px auto;
 }
 
-
-.reviewers ,.publication ,.technical ,.event {
+.reviewers, .publication, .technical, .event {
     text-align: center;
     font-size: 1.8em;
     margin: 40px 0 20px;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .namespace div[class^="namespace_r"] {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .namespace div[class^="namespace_r"] div {
-    background-color: #1b2845; 
+    background-color: #1b2845;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    flex: 0 0 calc(33.333% - 20px);
+    flex: 0 0 calc(33.33% - 20px); /* Flexbox adjustment */
     min-width: 200px;
     max-width: 300px;
 }
@@ -498,14 +488,14 @@ body {
 .namespace h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .namespace p {
     font-size: 1em;
-    color: #dcdcdc; 
+    color: #dcdcdc;
 }
 
 .box-namespace {
-    clip-path: polygon(0 0, 86.8% 0%, 100% 50%, 100% 100%, 0 100%);
+    clip-path: polygon(0% 0%, 96% 0%, 100% 20%, 100% 70%, 100% 100%, 0% 100%, 0% 70%, 0%);
 }
