@@ -433,9 +433,8 @@ body {
 }
 
 .namespace {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 2rem;
+    width: 100%;
     background-color: #102040;
     color: #ffffff;
 }
@@ -500,6 +499,3 @@ body {
     color: #dcdcdc;
 }
 
-.box-namespace {
-    clip-path: polygon(0% 0%, 96% 0%, 100% 20%, 100% 70%, 100% 100%, 0% 100%, 0% 70%, 0%);
-}
