@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1000;
 }
 
 #logo {
@@ -101,7 +102,7 @@ body {
 
 .main-contant {
     width: 100%;
-    height: 76vh;
+    height: auto;
     background-image: url(header/header-background-3.jpg);
     background-size: cover;
     background-position: 100%;
@@ -163,7 +164,6 @@ body {
 
 .about {
     width: 100%;
-    height: 40vh;
     background-image: url(submission/about-us-background.png);
     background-position: 50%;
     background-repeat: no-repeat;
@@ -292,7 +292,11 @@ body {
     background-color: #11284C;
     padding: 36px 40px;
     clip-path: polygon(0 0, 96.5% 0, 100% 8%, 100% 100%, 0 99%, 0% 50%);
-    
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
 }
 
 .template h2 {
