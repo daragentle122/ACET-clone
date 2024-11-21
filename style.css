@@ -386,3 +386,51 @@ body {
 .form a {
     clip-path: polygon(0 0, 86.8% 0%, 100% 50%, 100% 100%, 0 100%);
 }
+
+.agenda{
+    margin-top: -200px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agenda-header {
+    text-align: center;
+}
+
+.agenda p:first-child {
+    font-size: 32px;
+    font-weight: 800;
+    color: #11284C;
+}
+
+.agenda a{
+    font-size: 20px;
+    display: inline-block;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.agenda a:hover{
+    transform: scale(1.1);
+}
+
+#Date1{
+    margin-right: 51%;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #11284C;
+}
+
+#Date2{
+    margin-right: 53%;
+    margin-top: 70px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #11284C;
+}
