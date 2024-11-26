@@ -401,11 +401,12 @@ body {
 }
 
 .agenda-header {
+    font-size: 20px;
     text-align: center;
 }
 
 .agenda p:first-child {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 800;
     color: #11284C;
 }
@@ -415,6 +416,7 @@ body {
     color: red;
     cursor: pointer;
     transition: transform 0.3s ease;
+    font-size: 25px;
 }
 
 .agenda a:hover {
@@ -425,16 +427,15 @@ body {
     font-size: 32px;
     font-weight: 800;
     color: #11284C;
-    margin-top: 20px; /* Reduce excessive top margin */
+    margin-top: 100px; /* Reduce excessive top margin */
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 90px;
 }
 
 .namespace {
-    height: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 32px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 80px;
     width: 100%;
     background-color: #102040;
     color: #ffffff;
