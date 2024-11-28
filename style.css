@@ -501,6 +501,8 @@ body {
 }
 .event-venue{
     display: flex;
+    width: 100%;
+    height: 76vh;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
@@ -522,31 +524,45 @@ body {
     align-items: center;
     width: 100%;
     height: auto;
+    margin-top: 50px;
 }
-.map-and-image p{
+.map-and-image .image-text{
     background-image: url(header/cadt-building.png);
     background-size: cover; 
     background-position: center; 
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
     padding: 20px;
     width: 38%;
     height: 38vh;
     word-spacing: 5px;
-    line-height: 1.5;
     color: white;
-    flex-wrap: wrap ;
 }
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-text p:first-child {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 40px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.image-text p:last-child {
+    font-size: 16px;
+    margin: 0 40px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
 .map-and-image iframe{
     border: 0;
     width: 38%;
     height: 38vh;
 }
-.map-and-image p {
-    box-sizing: border-box;
-    display: wrap;
-}
+
 .gallery-info{
     display: flex;
     flex-direction: column;
@@ -554,6 +570,7 @@ body {
     font-size: 1.2em;
     margin-top: 10px;
     color: rgb(32, 32, 54);
+    margin-top: 10px;
     margin-bottom: 100px;
 }
 .gallery-info p{
@@ -565,6 +582,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+    margin-bottom: 20px;
 }
 .picture-of-speaker img {
     width: calc(16% - 10px); 
