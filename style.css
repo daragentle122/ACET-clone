@@ -298,7 +298,7 @@ body {
 }
 
 .template h2 {
-    font-size: 28px;
+    font-size: 32px;
     color: #fff;
     font-weight: 700;
     text-align: start;
@@ -455,6 +455,7 @@ body {
 
 .header h1 {
     font-size: 32px;
+    font-weight: 800;
     margin-bottom: 10px;
     color: #ffffff;
 }
@@ -495,27 +496,28 @@ body {
     color: #ffffff;
 }
 
-.namespace p {
+.box-namespace p {
     font-size: 12px;
     color: #dcdcdc;
 }
 .event-venue{
     display: flex;
     width: 100%;
-    height: 76vh;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 90px;
 }
 .event-venue h1{
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 10px;
-    color: rgb(32, 32, 54);
+    color: #11284C;
 }
 .event-venue p{
     font-size:16px;
     margin-bottom: 10px;
+    color: #9195a2;
 }
 .map-and-image{
     display: flex;
@@ -567,22 +569,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2em;
     margin-top: 10px;
-    color: rgb(32, 32, 54);
-    margin-top: 10px;
+    color: #11284C;
     margin-bottom: 100px;
 }
+
+.gallery-info h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
 .gallery-info p{
     font-size:16px;
     margin: 10px 0; 
+    color: #9195a2;
 }
 .picture-of-speaker{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 20px;
 }
 .picture-of-speaker img {
     width: calc(16% - 10px); 
@@ -594,17 +600,112 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
     cursor: pointer; 
 }
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.contact-info .text > h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #11284C;
+}
+
+.contact-info .text {
+    text-align: center;
+    color: #9195a2;
+    font-size: 16px;
+}
+
+.contact-info .line {
+    width: 150px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.contact-img {
+    width: 30px;
+    height: 50px;
+}
+
+.img-item {
+    width: 400px;
+    flex: 1;
+}
+
+.title-text {
+    font-size: 20px;
+    font-weight: 800;
+    color: #11284C;
+    margin: 10px 0 5px;
+}
+
+.img-item p:last-child {
+    text-align: center;
+    font-size: 16px;
+    color: #001969;
+}
+
+.message {
+    width: 62px;
+}
+
+.divider {
+    width: 2px;
+    height: 70px;
+    background-color: #272626;
+}
+
+.sponser-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    margin-bottom: 100px;
+}
+
+.sponser-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponser-text h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0 10px;
+    color: #11284C;
+}
+
+.sponser-text p {
+    font-size: 16px;
+    color: #9195a2;
+}
+
+.sponser-text .line {
+    width: 170px;
+}
+
 .cadt-anniversary img {
     width: 400px;
     height: auto;
-    margin-left: 10em;
-    margin-right: 10em;
 }
 .footer{
     display: flex;
     gap: 1em;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: #11284C;
 }
 .item{
     display: flex;
